@@ -38,7 +38,7 @@ function setBoardX(index) {
 
 function cellClick(index) {
   console.log(index)
-  if (board[index] != emptyCell) {
+  if (board[index - 1] != emptyCell) {
       // if it's not empty, we don't draw here
       return;
   }
