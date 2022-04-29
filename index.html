@@ -222,6 +222,10 @@
           rows="15"
         ></textarea>
 
+        <button type="button" style="margin-top: 20px" class="btn btn-primary" onclick="changeText()">
+          Change the 1st button's text
+        </button>
+
 
       </div>
     </main>
@@ -245,6 +249,22 @@
           sum.toString() +
           "\n";
       }
+
+
+      let changed = false; // not changed
+      function changeText() {
+        if(changed)
+        {
+          document.getElementById("button1").innerHTML = "Add number and get the sum";
+          changed = false;
+        }
+        else
+        {
+          document.getElementById("button1").innerHTML = "The button has changed";
+          changed = true;
+        }
+      }
+
     </script>
   </body>
 </html>
